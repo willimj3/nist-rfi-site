@@ -2,7 +2,7 @@
 
 A content-analysis site for every public comment submitted to NIST's 2026 Request for Information on Security Considerations for Artificial Intelligence Agents (docket [NIST-2025-0035](https://www.regulations.gov/docket/NIST-2025-0035)).
 
-- **Live site:** (pending deploy)
+- **Live site:** https://nist-rfi-site.vercel.app
 - **Source data:** 530 public comments + 660 attachment files, retrieved from regulations.gov 2026-04-20.
 - **Analysis:** 517 deduplicated representatives, each read by Claude Sonnet 4.6 and coded against a 12-field codebook + a 5-area topic-engagement schema. 99.6% of evidence excerpts are verbatim substrings of the source (see `/methods` on the live site).
 

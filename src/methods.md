@@ -78,20 +78,39 @@ For each of the 5 topic areas defined on [topics](/topics), each comment was cod
 
 ## Data
 
-All coded tables are downloadable as CSV:
+All coded tables are downloadable as CSV. Links are resolved at build time to the hashed asset URLs.
 
-<ul class="download-list">
-<li><a href="/data/comments.csv" download>comments.csv</a> — master join: 517 rows, every codebook field + topic-area fields + stakeholder type. Link back to regulations.gov included.</li>
-<li><a href="/data/comments_coded.csv" download>comments_coded.csv</a> — Phase 7 output (12-field codebook).</li>
-<li><a href="/data/comments_topic_areas.csv" download>comments_topic_areas.csv</a> — Phase 11 output (5-area engagement).</li>
-<li><a href="/data/comments_with_stakeholder.csv" download>comments_with_stakeholder.csv</a> — all 530 submissions + stakeholder + cluster info.</li>
-<li><a href="/data/theme_by_stakeholder_pct.csv" download>theme_by_stakeholder_pct.csv</a> — theme × stakeholder aggregate.</li>
-<li><a href="/data/topic_area_coverage_by_stakeholder.csv" download>topic_area_coverage_by_stakeholder.csv</a> — topic × stakeholder aggregate.</li>
-<li><a href="/data/topic_area_prevalence.csv" download>topic_area_prevalence.csv</a> — overall engagement per area.</li>
-<li><a href="/data/chisquare_summary.csv" download>chisquare_summary.csv</a> — χ² per codebook field vs. stakeholder_type.</li>
-<li><a href="/data/agreement_summary.csv" download>agreement_summary.csv</a> — consensus/division summary.</li>
-<li><a href="/data/citation_flags.csv" download>citation_flags.csv</a> — 12 standards/EO citation flags per comment.</li>
-</ul>
+```js
+const datasets = [
+  ["comments.csv", "master join: 517 rows, every codebook field + topic-area fields + stakeholder type. Link back to regulations.gov included."],
+  ["comments_coded.csv", "Phase 7 output (12-field codebook)."],
+  ["comments_topic_areas.csv", "Phase 11 output (5-area engagement)."],
+  ["comments_with_stakeholder.csv", "all 530 submissions + stakeholder + cluster info."],
+  ["theme_by_stakeholder_pct.csv", "theme × stakeholder aggregate."],
+  ["topic_area_coverage_by_stakeholder.csv", "topic × stakeholder aggregate."],
+  ["topic_area_prevalence.csv", "overall engagement per area."],
+  ["chisquare_summary.csv", "χ² per codebook field vs. stakeholder_type."],
+  ["agreement_summary.csv", "consensus/division summary."],
+  ["citation_flags.csv", "12 standards/EO citation flags per comment."],
+];
+
+const hrefs = {
+  "comments.csv": await FileAttachment("data/comments.csv").href,
+  "comments_coded.csv": await FileAttachment("data/comments_coded.csv").href,
+  "comments_topic_areas.csv": await FileAttachment("data/comments_topic_areas.csv").href,
+  "comments_with_stakeholder.csv": await FileAttachment("data/comments_with_stakeholder.csv").href,
+  "theme_by_stakeholder_pct.csv": await FileAttachment("data/theme_by_stakeholder_pct.csv").href,
+  "topic_area_coverage_by_stakeholder.csv": await FileAttachment("data/topic_area_coverage_by_stakeholder.csv").href,
+  "topic_area_prevalence.csv": await FileAttachment("data/topic_area_prevalence.csv").href,
+  "chisquare_summary.csv": await FileAttachment("data/chisquare_summary.csv").href,
+  "agreement_summary.csv": await FileAttachment("data/agreement_summary.csv").href,
+  "citation_flags.csv": await FileAttachment("data/citation_flags.csv").href,
+};
+
+display(html`<ul class="download-list">${datasets.map(([name, desc]) =>
+  html`<li><a href="${hrefs[name]}" download="${name}">${name}</a> — ${desc}</li>`
+)}</ul>`);
+```
 
 Data is offered under a <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0 license</a> — use it, cite it.
 
