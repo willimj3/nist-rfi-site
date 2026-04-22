@@ -48,7 +48,7 @@ code {
   grid-template-columns: auto 1fr;
   gap: 2rem;
   align-items: center;
-  padding: 2rem 0 1rem;
+  padding: 2rem 0.75rem 1rem;
   border-top: 3px solid var(--accent);
   border-bottom: 1px solid var(--theme-foreground-faint);
   margin: 1rem 0 2rem;
@@ -60,6 +60,9 @@ code {
   line-height: 1;
   color: var(--accent);
   font-variant-numeric: tabular-nums;
+  /* Tabular-nums can still have left side-bearing that clips against the
+     container edge; a small inline padding keeps the glyph clear. */
+  padding-inline-start: 0.25rem;
 }
 .hero-caption {
   font-size: 1.15rem;
