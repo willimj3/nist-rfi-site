@@ -54,7 +54,7 @@ const primaryTopicFilter = Inputs.select(primaryTopicOptions, {
 });
 const primaryTopic = Generators.input(primaryTopicFilter);
 
-const searchFilter = Inputs.search({placeholder: "Search recommendations / excerpt / org…"});
+const searchFilter = Inputs.text({type: "search", placeholder: "Search recommendations / excerpt / org…", width: "100%"});
 const search = Generators.input(searchFilter);
 
 display(html`<div class="filter-grid">
