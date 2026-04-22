@@ -37,5 +37,6 @@ export default {
   output: "dist",
   linkify: true,
   typographer: true,
-  cleanUrls: true,
+  preserveIndex: false,
+  preserveExtension: false,
 };
