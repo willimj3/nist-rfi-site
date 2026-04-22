@@ -1,9 +1,9 @@
 stakeholder_type,n,area_1_substantive_pct,area_1_addressed_pct,area_2_substantive_pct,area_2_addressed_pct,area_3_substantive_pct,area_3_addressed_pct,area_4_substantive_pct,area_4_addressed_pct,area_5_substantive_pct,area_5_addressed_pct
-LargeTechCompany,28,96.4,100.0,75.0,92.9,25.0,67.9,82.1,100.0,60.7,100.0
-AIStartup,84,90.5,97.6,69.0,86.9,31.0,60.7,85.7,97.6,52.4,96.4
-EnterpriseSoftwareOrSecurityVendor,40,90.0,100.0,72.5,100.0,25.0,62.5,90.0,100.0,60.0,97.5
-TradeAssociation,25,68.0,100.0,68.0,88.0,28.0,60.0,60.0,92.0,76.0,100.0
-CivilSocietyNGO,23,82.6,95.7,43.5,78.3,21.7,56.5,65.2,91.3,60.9,95.7
-AcademicOrResearchInstitute,10,90.0,100.0,40.0,80.0,60.0,70.0,60.0,100.0,50.0,90.0
-LawFirmOrConsultancy,13,84.6,100.0,69.2,76.9,7.7,46.2,84.6,100.0,46.2,100.0
-Individual,205,76.6,97.1,61.0,86.8,26.3,58.5,76.1,95.6,43.9,95.6
+LargeTechCompany,28,89.3,96.4,85.7,96.4,35.7,85.7,53.6,96.4,25.0,92.9
+AIStartup,84,86.9,94.0,88.1,97.6,56.0,92.9,71.4,96.4,22.6,81.0
+EnterpriseSoftwareOrSecurityVendor,40,92.5,100.0,95.0,100.0,50.0,90.0,60.0,100.0,7.5,75.0
+TradeAssociation,25,76.0,96.0,92.0,100.0,36.0,96.0,52.0,92.0,52.0,96.0
+CivilSocietyNGO,23,82.6,91.3,65.2,82.6,30.4,78.3,52.2,95.7,26.1,91.3
+AcademicOrResearchInstitute,10,90.0,90.0,70.0,90.0,60.0,90.0,50.0,80.0,20.0,70.0
+LawFirmOrConsultancy,13,92.3,100.0,92.3,100.0,38.5,100.0,76.9,92.3,15.4,69.2
+Individual,205,77.1,92.7,82.0,96.6,51.7,84.4,65.4,93.2,21.0,84.9

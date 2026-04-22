@@ -1,6 +1,6 @@
 area,area_name,substantive,brief,not_addressed,substantive_pct,addressed_pct
-1,Agent architecture & threat model,431,74,12,83.4,97.7
-2,"Identity, authentication & delegation",328,124,65,63.4,87.4
-3,Pre-deployment evaluation & testing,153,164,200,29.6,61.3
-4,"Runtime controls, monitoring, incident handling",410,90,17,79.3,96.7
-5,"Governance, supply chain & ecosystem",278,221,18,53.8,96.5
+1,"Security Threats, Risks, and Vulnerabilities Affecting AI Agent Systems",425,62,30,82.2,94.2
+2,Security Practices for AI Agent Systems,439,61,17,84.9,96.7
+3,Assessing the Security of AI Agent Systems,271,188,58,52.4,88.8
+4,"Limiting, Modifying, and Monitoring Deployment Environments",329,160,28,63.6,94.6
+5,Additional Considerations,114,320,83,22.1,83.9

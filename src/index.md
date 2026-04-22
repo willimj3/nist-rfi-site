@@ -53,7 +53,7 @@ const topicChart = Plot.plot({
 display(topicChart);
 ```
 
-**Of the five topic areas the RFI asked about, pre-deployment evaluation is the only one that most commenters can't bring themselves to prescribe a regime for.** 83% have substantive things to say about agent architecture and threats; 79% about runtime defenses. Only 30% engage substantively with evaluation, and nearly 40% don't address it at all. That silence is what this site is about.
+**Of the five topic areas the RFI asks about, "Additional Considerations" is the section almost nobody engages with.** 82% of commenters have substantive things to say about threats and vulnerabilities (Topic 1); 85% about security practices (Topic 2). But only 22% engage substantively with Topic 5 — research priorities, international approaches, and cross-domain insights. And 7.5% of enterprise security vendors engage substantively on Topic 5 at all. The RFI itself signals this weighting — none of its nine "priority questions" fall in Topic 5.
 
 ---
 
@@ -69,8 +69,8 @@ display(topicChart);
     <p>deduplicated representatives (no form-letter campaigns detected)</p>
   </div>
   <div class="card">
-    <h2>30%</h2>
-    <p>substantively engage with <a href="/topics">pre-deployment evaluation</a></p>
+    <h2>22%</h2>
+    <p>substantively engage with <a href="/topics">Topic 5 (Additional Considerations)</a></p>
   </div>
   <div class="card">
     <h2>97%</h2>
@@ -87,11 +87,11 @@ display(topicChart);
   </div>
   <div class="card">
     <h3><a href="/topics">Topic-area engagement</a></h3>
-    <p>Of the five areas NIST asked about, Area 3 (pre-deployment evaluation) gets the least substantive response — and the push for it comes from academia and civil society, not industry.</p>
+    <p>Of the five topic areas the RFI asks about, Topic 5 ("Additional Considerations") gets the least substantive response. Only Trade Associations engage with it at any meaningful rate.</p>
   </div>
   <div class="card">
     <h3><a href="/stakeholders">Stakeholder patterns</a></h3>
-    <p>Enterprise Software vendors reframe the RFI as an identity-and-access problem. Trade associations flag innovation cost. Individuals propose their own technical frameworks.</p>
+    <p>Enterprise Software vendors lead on security practices (95%) but avoid "Additional Considerations" almost entirely (7.5%). Trade associations flag innovation cost. Individuals propose their own technical frameworks.</p>
   </div>
   <div class="card">
     <h3><a href="/notable">Notable submissions</a></h3>
