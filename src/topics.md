@@ -17,18 +17,28 @@ The RFI groups its questions into <strong>five topic areas</strong>, referenced 
 ## Overall engagement
 
 ```js
+// Short chart labels — full verbatim headings are in the cards further down.
+const TOPIC_SHORT = {
+  "Security Threats, Risks, and Vulnerabilities Affecting AI Agent Systems": "1. Threats, risks, vulnerabilities",
+  "Security Practices for AI Agent Systems": "2. Security practices",
+  "Assessing the Security of AI Agent Systems": "3. Assessing security",
+  "Limiting, Modifying, and Monitoring Deployment Environments": "4. Deployment environments",
+  "Additional Considerations": "5. Additional considerations",
+};
+const prevShort = prev.map(d => ({...d, short_name: TOPIC_SHORT[d.area_name] || d.area_name}));
+
 display(Plot.plot({
-  marginLeft: 260,
+  marginLeft: 220,
   marginBottom: 40,
   width: Math.min(width, 820),
   height: 300,
   x: {label: "% of representatives (n=517)", domain: [0, 100], grid: true, tickFormat: d => `${d}%`},
-  y: {label: null, domain: prev.map(d => d.area_name)},
+  y: {label: null, domain: prevShort.map(d => d.short_name)},
   color: {legend: true, domain: ["substantive", "brief"], range: ["#1f4e79", "#8db4d2"]},
   marks: [
-    Plot.barX(prev, {y: "area_name", x: "substantive_pct", fill: () => "substantive", tip: true}),
-    Plot.barX(prev, {y: "area_name", x: d => d.addressed_pct - d.substantive_pct, x1: "substantive_pct", x2: "addressed_pct", fill: () => "brief", tip: true}),
-    Plot.text(prev, {y: "area_name", x: "addressed_pct", text: d => `${d.addressed_pct.toFixed(0)}%`, dx: 6, textAnchor: "start", fontSize: 11, fill: "currentColor"}),
+    Plot.barX(prevShort, {y: "short_name", x: "substantive_pct", fill: () => "substantive", tip: true}),
+    Plot.barX(prevShort, {y: "short_name", x1: "substantive_pct", x2: "addressed_pct", fill: () => "brief", tip: true}),
+    Plot.text(prevShort, {y: "short_name", x: "addressed_pct", text: d => `${d.addressed_pct.toFixed(0)}%`, dx: 6, textAnchor: "start", fontSize: 11, fill: "currentColor"}),
     Plot.ruleX([0]),
   ],
 }));
@@ -42,11 +52,11 @@ display(Plot.plot({
 const groups = cov.map(d => d.stakeholder_type);
 const areas = ["area_1_substantive_pct","area_2_substantive_pct","area_3_substantive_pct","area_4_substantive_pct","area_5_substantive_pct"];
 const areaLabels = {
-  "area_1_substantive_pct": "1. Architecture & threat",
-  "area_2_substantive_pct": "2. Identity & auth",
-  "area_3_substantive_pct": "3. Pre-deploy eval",
-  "area_4_substantive_pct": "4. Runtime & incident",
-  "area_5_substantive_pct": "5. Governance & supply",
+  "area_1_substantive_pct": "1. Threats",
+  "area_2_substantive_pct": "2. Practices",
+  "area_3_substantive_pct": "3. Assessing",
+  "area_4_substantive_pct": "4. Deployment envs",
+  "area_5_substantive_pct": "5. Additional",
 };
 const heatmapData = [];
 for (const row of cov) {

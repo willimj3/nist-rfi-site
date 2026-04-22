@@ -15,31 +15,40 @@ const topicPrev = FileAttachment("data/topic_area_prevalence.csv").csv({typed: t
 ```
 
 ```js
+// Short labels for the chart — full verbatim headings are in the cards below.
+const TOPIC_SHORT = {
+  "Security Threats, Risks, and Vulnerabilities Affecting AI Agent Systems": "1. Threats, risks, vulnerabilities",
+  "Security Practices for AI Agent Systems": "2. Security practices",
+  "Assessing the Security of AI Agent Systems": "3. Assessing security",
+  "Limiting, Modifying, and Monitoring Deployment Environments": "4. Deployment environments",
+  "Additional Considerations": "5. Additional considerations",
+};
+const topicPrevShort = topicPrev.map(d => ({...d, short_name: TOPIC_SHORT[d.area_name] || d.area_name}));
+
 // Hero chart: topic-area engagement — the big pattern
 const topicChart = Plot.plot({
-  marginLeft: 230,
+  marginLeft: 220,
   marginBottom: 40,
-  width: Math.min(width, 800),
+  width: Math.min(width, 820),
   x: {label: "% of representatives (n=517)", domain: [0, 100], grid: true, tickFormat: d => `${d}%`},
-  y: {label: null, domain: topicPrev.map(d => d.area_name)},
+  y: {label: null, domain: topicPrevShort.map(d => d.short_name)},
   color: {legend: true, domain: ["substantive", "brief"], range: ["#1f4e79", "#8db4d2"]},
   marks: [
-    Plot.barX(topicPrev, {
-      y: "area_name",
+    Plot.barX(topicPrevShort, {
+      y: "short_name",
       x: "substantive_pct",
       fill: () => "substantive",
       tip: true,
     }),
-    Plot.barX(topicPrev, {
-      y: "area_name",
-      x: d => d.addressed_pct - d.substantive_pct,
+    Plot.barX(topicPrevShort, {
+      y: "short_name",
       x1: "substantive_pct",
       x2: "addressed_pct",
       fill: () => "brief",
       tip: true,
     }),
-    Plot.text(topicPrev, {
-      y: "area_name",
+    Plot.text(topicPrevShort, {
+      y: "short_name",
       x: "addressed_pct",
       text: d => `${d.addressed_pct.toFixed(0)}% addressed`,
       dx: 6,
