@@ -63,7 +63,7 @@ display(Plot.plot({
   x: {label: "Posted date", type: "time"},
   y: {label: "# submissions", grid: true},
   marks: [
-    Plot.barY(byDay, {x: "date", y: "n", fill: "#1f4e79", tip: true}),
+    Plot.rectY(byDay, {x: "date", interval: "day", y: "n", fill: "#1f4e79", tip: true}),
     Plot.ruleY([0]),
   ],
 }));
