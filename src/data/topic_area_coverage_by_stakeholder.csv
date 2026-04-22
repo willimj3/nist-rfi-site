@@ -1,0 +1,9 @@
+stakeholder_type,n,area_1_substantive_pct,area_1_addressed_pct,area_2_substantive_pct,area_2_addressed_pct,area_3_substantive_pct,area_3_addressed_pct,area_4_substantive_pct,area_4_addressed_pct,area_5_substantive_pct,area_5_addressed_pct
+LargeTechCompany,28,96.4,100.0,75.0,92.9,25.0,67.9,82.1,100.0,60.7,100.0
+AIStartup,84,90.5,97.6,69.0,86.9,31.0,60.7,85.7,97.6,52.4,96.4
+EnterpriseSoftwareOrSecurityVendor,40,90.0,100.0,72.5,100.0,25.0,62.5,90.0,100.0,60.0,97.5
+TradeAssociation,25,68.0,100.0,68.0,88.0,28.0,60.0,60.0,92.0,76.0,100.0
+CivilSocietyNGO,23,82.6,95.7,43.5,78.3,21.7,56.5,65.2,91.3,60.9,95.7
+AcademicOrResearchInstitute,10,90.0,100.0,40.0,80.0,60.0,70.0,60.0,100.0,50.0,90.0
+LawFirmOrConsultancy,13,84.6,100.0,69.2,76.9,7.7,46.2,84.6,100.0,46.2,100.0
+Individual,205,76.6,97.1,61.0,86.8,26.3,58.5,76.1,95.6,43.9,95.6

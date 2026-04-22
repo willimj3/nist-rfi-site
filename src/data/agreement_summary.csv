@@ -1,0 +1,9 @@
+field,top_value,top_pct,second_value,second_pct
+supports_liability_safe_harbor,unclear,0.965183752417795,no,0.027079303675048357
+quality,substantive,0.90715667311412,promotional,0.0425531914893617
+stance_on_nist_as_standards_body,supportive,0.8955512572533849,neutral,0.059961315280464215
+supports_incident_reporting_regime,unclear,0.8452611218568665,conditional,0.09090909090909091
+emphasizes_innovation_or_compliance_cost,no,0.758220502901354,yes,0.24177949709864605
+overall_stance_on_mandatory_federal_role,mixed,0.5589941972920697,supportive,0.21083172147001933
+supports_mandatory_pre_deployment_eval,conditional,0.5106382978723404,unclear,0.3578336557059961
+tone,mixed,0.4932301740812379,technical,0.40425531914893614

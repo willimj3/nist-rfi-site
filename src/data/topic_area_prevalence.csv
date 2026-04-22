@@ -1,0 +1,6 @@
+area,area_name,substantive,brief,not_addressed,substantive_pct,addressed_pct
+1,Agent architecture & threat model,431,74,12,83.4,97.7
+2,"Identity, authentication & delegation",328,124,65,63.4,87.4
+3,Pre-deployment evaluation & testing,153,164,200,29.6,61.3
+4,"Runtime controls, monitoring, incident handling",410,90,17,79.3,96.7
+5,"Governance, supply chain & ecosystem",278,221,18,53.8,96.5

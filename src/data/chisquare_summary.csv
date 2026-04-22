@@ -1,0 +1,7 @@
+field,n_groups,n_values,chi2,dof,p_value,total_n
+emphasizes_innovation_or_compliance_cost,9,2,76.85590471906134,8,2.0944268498384007e-13,509
+tone,9,5,126.36363728821321,32,3.697583120026244e-13,509
+overall_stance_on_mandatory_federal_role,9,4,106.12291087107629,24,2.6635889776438924e-12,509
+supports_mandatory_pre_deployment_eval,9,4,71.09853563195597,24,1.4887931468701453e-06,509
+stance_on_nist_as_standards_body,9,4,25.392083451883497,24,0.3847117406634573,509
+supports_incident_reporting_regime,9,4,17.323647781737186,24,0.8345341007477687,509

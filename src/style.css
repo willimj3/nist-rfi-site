@@ -1,0 +1,344 @@
+/* NIST AI Agent RFI — academic-leaning theme additions
+   Builds on Observable Framework's default theme. */
+
+:root {
+  --accent: #1f4e79;
+  --accent-soft: #eaf0f6;
+  --ink: currentColor;
+}
+
+/* Body uses a serif for reading; headings and UI stay sans.
+   Monospace for document IDs and codebook field names. */
+:root {
+  --serif: "Source Serif Pro", "Charter", "Iowan Old Style", Georgia, serif;
+}
+.observablehq-root,
+body {
+  font-family: var(--serif);
+}
+h1, h2, h3, h4, h5, h6,
+#observablehq-sidebar,
+#observablehq-header,
+.observablehq-header,
+.observablehq-footer,
+nav, .observablehq-pager {
+  font-family: var(--sans-serif);
+}
+
+/* Tighten heading hierarchy */
+main h1 {
+  letter-spacing: -0.01em;
+  line-height: 1.12;
+  margin-top: 0.2em;
+}
+main h1 + p:first-of-type,
+main h1 + blockquote:first-of-type {
+  font-size: 1.1em;
+  color: var(--theme-foreground-muted);
+}
+
+/* Document IDs in mono */
+code {
+  font-size: 0.92em;
+}
+
+/* ─────────────────────────── Hero block (landing page) ─────────────────────────── */
+.hero {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem 0 1rem;
+  border-top: 3px solid var(--accent);
+  border-bottom: 1px solid var(--theme-foreground-faint);
+  margin: 1rem 0 2rem;
+}
+.hero-number {
+  font-family: var(--sans-serif);
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+}
+.hero-caption {
+  font-size: 1.15rem;
+  line-height: 1.45;
+  max-width: 55ch;
+}
+.hero-caption strong {
+  color: var(--accent);
+}
+
+/* ─────────────────────────── Callout / note blocks ─────────────────────────── */
+.note {
+  border-left: 3px solid var(--accent);
+  background: var(--accent-soft);
+  padding: 0.8rem 1.1rem;
+  margin: 1.5rem 0;
+  border-radius: 0 4px 4px 0;
+}
+.note.small {
+  font-size: 0.85rem;
+}
+@media (prefers-color-scheme: dark) {
+  .note {
+    background: rgba(120, 160, 210, 0.1);
+  }
+}
+
+/* ─────────────────────────── Cards (grids on landing) ─────────────────────────── */
+.card {
+  padding: 1rem 1.2rem;
+  border: 1px solid var(--theme-foreground-faint);
+  border-radius: 6px;
+  background: var(--theme-background-alt);
+}
+.card h2 {
+  font-family: var(--sans-serif);
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 0 0 0.3rem 0;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+}
+.card h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+.card h3 a {
+  color: var(--accent);
+  text-decoration: none;
+}
+.card h3 a:hover {
+  text-decoration: underline;
+}
+.card p {
+  margin: 0;
+  line-height: 1.45;
+}
+
+/* ─────────────────────────── Themes page — blockquotes ─────────────────────────── */
+.theme-section h3 {
+  border-bottom: 1px solid var(--theme-foreground-faint);
+  padding-bottom: 0.3em;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.theme-pct {
+  font-size: 0.75em;
+  font-weight: 400;
+  color: var(--theme-foreground-muted);
+  font-family: var(--sans-serif);
+}
+.theme-section blockquote {
+  border-left: 2px solid var(--accent);
+  padding: 0.4em 1em;
+  margin: 0.8em 0;
+  font-style: italic;
+  color: var(--theme-foreground);
+}
+.theme-section blockquote footer {
+  font-style: normal;
+  font-size: 0.85em;
+  color: var(--theme-foreground-muted);
+  margin-top: 0.3em;
+  font-family: var(--sans-serif);
+}
+.theme-section blockquote footer a {
+  font-family: var(--monospace);
+}
+
+/* ─────────────────────────── Silences page ─────────────────────────── */
+.liability-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 1.5rem 0 2rem;
+  align-items: flex-start;
+}
+.liability-stat {
+  flex: 1;
+  min-width: 260px;
+  font-size: 1.05rem;
+  line-height: 1.45;
+}
+.liability-stat .big {
+  display: block;
+  font-family: var(--sans-serif);
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
+  margin-bottom: 0.2em;
+}
+
+/* ─────────────────────────── Notable submissions ─────────────────────────── */
+.notable-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.notable-item {
+  border-left: 3px solid var(--accent);
+  padding: 0.2rem 1rem 1rem;
+}
+.notable-item h3 {
+  margin-top: 0.6em;
+  margin-bottom: 0.5em;
+}
+.notable-item h3 a {
+  font-family: var(--monospace);
+  font-size: 0.88em;
+  color: var(--accent);
+}
+.notable-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.85rem;
+  font-family: var(--sans-serif);
+  margin-bottom: 0.6rem;
+  color: var(--theme-foreground-muted);
+}
+.stakeholder-tag {
+  background: var(--accent-soft);
+  color: var(--accent);
+  padding: 0.1rem 0.5rem;
+  border-radius: 3px;
+  font-weight: 600;
+}
+@media (prefers-color-scheme: dark) {
+  .stakeholder-tag {
+    background: rgba(120, 160, 210, 0.2);
+    color: #bcd4e8;
+  }
+}
+.notable-themes,
+.notable-asks {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+.notable-themes code {
+  margin-right: 0.4rem;
+  font-size: 0.82em;
+  background: var(--theme-background-alt);
+  padding: 0.05rem 0.35rem;
+  border-radius: 2px;
+}
+.notable-excerpt {
+  border-left: 2px solid var(--theme-foreground-faint);
+  padding-left: 0.8rem;
+  margin: 0.6rem 0 0;
+  font-style: italic;
+  color: var(--theme-foreground-muted);
+  font-size: 0.9rem;
+}
+
+/* ─────────────────────────── Methods page ─────────────────────────── */
+.download-list {
+  list-style: none;
+  padding-left: 0;
+}
+.download-list li {
+  padding: 0.4rem 0;
+  border-bottom: 1px dotted var(--theme-foreground-faint);
+}
+.download-list li a {
+  font-family: var(--monospace);
+  font-size: 0.9em;
+  color: var(--accent);
+}
+
+.citation-block {
+  border: 1px solid var(--theme-foreground-faint);
+  background: var(--theme-background-alt);
+  padding: 0.8rem 1.1rem;
+  margin: 1.2rem 0;
+  font-family: var(--serif);
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+/* ─────────────────────────── Grid utilities ─────────────────────────── */
+.grid-cols-1 > .card + .card {
+  margin-top: 0.6rem;
+}
+
+/* ─────────────────────────── Explore pages ─────────────────────────── */
+.filter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.6rem 1rem;
+  margin: 1rem 0 0.5rem;
+}
+.result-count {
+  margin: 1rem 0 0.5rem;
+  color: var(--theme-foreground-muted);
+  font-family: var(--sans-serif);
+}
+.result-count strong {
+  color: var(--accent);
+  font-size: 1.1em;
+}
+.detail-card {
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  padding: 1rem 1.2rem;
+  margin-top: 1rem;
+  background: var(--theme-background-alt);
+}
+.detail-card h3 {
+  margin-top: 0;
+}
+.detail-card h3 a {
+  font-family: var(--monospace);
+  font-size: 0.9em;
+  color: var(--accent);
+}
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 0.4rem 1rem;
+  font-family: var(--sans-serif);
+  font-size: 0.9rem;
+  margin: 0.6rem 0;
+  padding: 0.6rem 0;
+  border-top: 1px dotted var(--theme-foreground-faint);
+  border-bottom: 1px dotted var(--theme-foreground-faint);
+}
+.detail-section {
+  margin: 0.6rem 0;
+  line-height: 1.45;
+}
+.detail-section code {
+  margin-right: 0.35rem;
+  background: var(--theme-background);
+  padding: 0.05rem 0.35rem;
+  border-radius: 2px;
+  font-size: 0.82em;
+}
+.detail-excerpt {
+  border-left: 2px solid var(--accent);
+  padding-left: 0.8rem;
+  margin: 0.6rem 0;
+  font-style: italic;
+  color: var(--theme-foreground-muted);
+}
+.area-list {
+  margin: 0.3rem 0;
+  padding-left: 1.2rem;
+  font-family: var(--sans-serif);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.area-list em {
+  color: var(--theme-foreground-muted);
+}
+.detail-hint {
+  color: var(--theme-foreground-muted);
+  font-style: italic;
+  margin: 1rem 0;
+}
