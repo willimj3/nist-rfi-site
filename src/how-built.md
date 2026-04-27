@@ -70,4 +70,4 @@ Three things:
 
 ---
 
-**Built by Mark Williams, Vanderbilt MLS '27.** Questions? [mark.j.williams@vanderbilt.edu](mailto:mark.j.williams@vanderbilt.edu).
+**Built by Mark Williams.** Questions? [mark.j.williams@vanderbilt.edu](mailto:mark.j.williams@vanderbilt.edu).
