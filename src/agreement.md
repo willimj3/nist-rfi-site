@@ -35,7 +35,7 @@ There are no sharply-divided substantive fields in this corpus. What looks like 
 ## Where the real splits are
 
 ```js
-const chi = FileAttachment("data/chisquare_summary.csv").csv({typed: true});
+const chi = await FileAttachment("data/chisquare_summary.csv").csv({typed: true});
 const relevant = chi.filter(d => d.field !== "supports_liability_safe_harbor" && d.field !== "supports_incident_reporting_regime");
 display(Plot.plot({
   marginLeft: 280,
