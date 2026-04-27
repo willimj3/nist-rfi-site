@@ -30,7 +30,7 @@ There are no sharply-divided substantive fields in this corpus. What looks like 
 | Mandatory pre-deployment evaluation? | **conditional** | 51% | **unclear** | 36% |
 | Overall stance on mandatory federal role? | **mixed** | 56% | **supportive** | 21% |
 
-**The cleavage is over scope, not principle.** 77% of commenters are supportive-or-mixed on a mandatory federal role. Only 4% are outright opposed. 51% endorse mandatory pre-deployment evaluation *conditionally* (risk-tiered, scope-limited); only 1.4% outright oppose it. This is a corpus of hedged support, not two camps divided across a fault line.
+**The split is over scope, not principle.** 77% of commenters are supportive-or-mixed on a mandatory federal role. Only 4% are outright opposed. 51% endorse mandatory pre-deployment evaluation *conditionally* (risk-tiered, scope-limited); only 1.4% outright oppose it. This is a corpus of hedged support, not two camps divided across a fault line.
 
 ## Where the real splits are
 
