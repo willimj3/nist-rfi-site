@@ -31,7 +31,7 @@ export default {
   root: "src",
   theme: ["light", "dark", "wide"],
   header: "",
-  footer: `<div>Williams, M. (2026). <em>Public Comments to NIST RFI on AI Agent Security.</em> Vanderbilt MLS Program. Source data: <a href="https://www.regulations.gov/docket/NIST-2025-0035">NIST-2025-0035</a> on regulations.gov. Code/data: <a href="/methods">Methods</a>.</div>`,
+  footer: `<div>Williams, M. (2026). <em>Public Comments to NIST RFI on AI Agent Security.</em> Professor of the Practice, Vanderbilt Law School. Source data: <a href="https://www.regulations.gov/docket/NIST-2025-0035">NIST-2025-0035</a> on regulations.gov. Code/data: <a href="/methods">Methods</a>.</div>`,
   toc: true,
   pager: true,
   output: "dist",

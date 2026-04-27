@@ -27,7 +27,7 @@ Every row in `src/data/comments.csv` is a coded representative comment with stak
 
 ## Citation
 
-Williams, M. (2026). _Public Comments to NIST RFI on Security Considerations for Artificial Intelligence Agents: A Content Analysis of Docket NIST-2025-0035._ Vanderbilt University MLS Program, AI in Law Practice.
+Williams, M. (2026). _Public Comments to NIST RFI on Security Considerations for Artificial Intelligence Agents: A Content Analysis of Docket NIST-2025-0035._ Professor of the Practice, Vanderbilt Law School.
 
 ## How it was built
 

@@ -116,7 +116,7 @@ Data is offered under a <a href="https://creativecommons.org/licenses/by/4.0/">C
 ## Citation
 
 <div class="citation-block">
-Williams, M. (2026). <em>Public Comments to NIST RFI on Security Considerations for Artificial Intelligence Agents: A Content Analysis of Docket NIST-2025-0035.</em> Vanderbilt University MLS Program, AI in Law Practice.
+Williams, M. (2026). <em>Public Comments to NIST RFI on Security Considerations for Artificial Intelligence Agents: A Content Analysis of Docket NIST-2025-0035.</em> Professor of the Practice, Vanderbilt Law School.
 </div>
 
 Source data: NIST docket [NIST-2025-0035](https://www.regulations.gov/docket/NIST-2025-0035) on regulations.gov. 530 public comments, posted 2026-03-15 through 2026-04-07. All comments retrieved 2026-04-20.

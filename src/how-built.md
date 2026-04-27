@@ -70,4 +70,4 @@ Three things:
 
 ---
 
-**Built by Mark Williams.** Questions? [mark.j.williams@vanderbilt.edu](mailto:mark.j.williams@vanderbilt.edu).
+**Built by Mark Williams, Professor of the Practice, Vanderbilt Law School.** Questions? [mark.j.williams@vanderbilt.edu](mailto:mark.j.williams@vanderbilt.edu).
