@@ -4,15 +4,35 @@ title: NIST AI Agent Security RFI — Public Comment Analysis
 
 # How industry, labs, and the public told NIST to regulate AI agents
 
-<div class="hero">
-<div class="hero-number">22%</div>
-<div class="hero-caption">The RFI asked questions across <strong>five topic areas</strong>. Four of them drew substantive engagement from a majority of the 517 organizations that responded. The fifth — <em>Additional Considerations</em>, covering research priorities, international approaches, and cross-domain insights — drew it from 22%. None of the RFI's nine priority questions fall in that section.</div>
-</div>
+A content analysis of every public comment submitted to NIST's 2026 Request for Information on [Security Considerations for AI Agents](https://www.federalregister.gov/documents/2026/01/08/2026-00206/) (docket NIST-2025-0035).
 
 ```js
 const comments = FileAttachment("data/comments.csv").csv({typed: true});
 const topicPrev = FileAttachment("data/topic_area_prevalence.csv").csv({typed: true});
 ```
+
+## At a glance
+
+<div class="grid grid-cols-4">
+  <div class="card">
+    <h2>530</h2>
+    <p>public comments submitted to docket <a href="https://www.regulations.gov/docket/NIST-2025-0035">NIST-2025-0035</a></p>
+  </div>
+  <div class="card">
+    <h2>517</h2>
+    <p>deduplicated representatives (no form-letter campaigns detected)</p>
+  </div>
+  <div class="card">
+    <h2>90%</h2>
+    <p>support <a href="/agreement">NIST as the standards body</a> for AI agent security</p>
+  </div>
+  <div class="card">
+    <h2>4%</h2>
+    <p>are outright opposed to a mandatory federal role; the rest support it or hedge</p>
+  </div>
+</div>
+
+## Where commenters engaged
 
 ```js
 // Short labels for the chart — full verbatim headings are in the cards below.
@@ -62,30 +82,7 @@ const topicChart = Plot.plot({
 display(topicChart);
 ```
 
-**Of the five topic areas, only "Additional Considerations" fails to draw majority engagement.** 82% have substantive things to say about threats and vulnerabilities (Topic 1); 85% about security practices (Topic 2). But only 22% engage substantively with Topic 5 — and 7.5% of enterprise security vendors engage with it at all. Trade Associations are the only stakeholder group that pushes Topic 5 (52% substantive). The pattern matches the RFI's own framing: the priority questions NIST highlights for bandwidth-limited respondents are concentrated in Topics 1–4.
-
----
-
-## At a glance
-
-<div class="grid grid-cols-4">
-  <div class="card">
-    <h2>530</h2>
-    <p>public comments submitted to docket <a href="https://www.regulations.gov/docket/NIST-2025-0035">NIST-2025-0035</a></p>
-  </div>
-  <div class="card">
-    <h2>517</h2>
-    <p>deduplicated representatives (no form-letter campaigns detected)</p>
-  </div>
-  <div class="card">
-    <h2>22%</h2>
-    <p>substantively engage with <a href="/topics">Topic 5 (Additional Considerations)</a></p>
-  </div>
-  <div class="card">
-    <h2>90%</h2>
-    <p>support <a href="/agreement">NIST as the standards body</a> for AI agent security</p>
-  </div>
-</div>
+The RFI is organized into five topic areas. Engagement is heavily concentrated in Topics 1–4 (threats, security practices, assessment, deployment environments); Topic 5 — Additional Considerations, covering research priorities and international approaches — draws substantive engagement from 22% of commenters. None of the RFI's nine priority questions fall in Topic 5. See [Topic-area engagement](/topics) for the per-stakeholder breakdown.
 
 ## What to read
 
