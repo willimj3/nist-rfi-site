@@ -92,7 +92,7 @@ display(Plot.plot({
 - **Academic & Research institutes lead on Topic 3 (Assessing)** at 60% — the highest group rate on the most methodology-heavy section. If NIST picks up specific assessment or evaluation regimes from this RFI, watch academic submissions.
 - **Civil society has the weakest engagement on Topic 2 (65%)** — the lowest of any analytical group on an otherwise-near-universal section. Their emphasis is elsewhere (Topic 1, Topic 3).
 - **Law Firms & Consultancies concentrate on Topic 4 (Deployment Environments) at 77%** — the second-highest rate among all groups. This is where the legal-community submissions land: constraints on agent action, counterparty risk, rollback mechanisms.
-- **AIFoundationModelLab (n=3, excluded from the heatmap — below the n≥5 threshold for aggregation)** is revealing at the individual level. OpenAI engages substantively on all five topics; Hugging Face is substantive on Topics 1, 2, and 4; Anthropic is substantive only on Topic 1. Even the frontier labs don't uniformly address every topic area.
+- **AIFoundationModelLab (n=2, excluded from the heatmap — below the n≥5 threshold for aggregation)** is revealing at the individual level. OpenAI engages substantively on all five topics; Anthropic is substantive only on Topic 1. Even the two frontier labs that responded don't uniformly address every topic area.
 
 ## The five topic areas (verbatim from the RFI)
 

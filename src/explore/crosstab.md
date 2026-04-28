@@ -131,7 +131,7 @@ display(Inputs.table(
 ```
 
 <div class="note small">
-Small-N caveat: many cells have counts under 5. Don't over-interpret differences where the row total is small. When a group has fewer than 5 observations (e.g., AIFoundationModelLab n=3, GovernmentOrPublicSector n=1), the percentage view is unstable.
+Small-N caveat: many cells have counts under 5. Don't over-interpret differences where the row total is small. When a group has fewer than 5 observations (e.g., AIFoundationModelLab n=2, GovernmentOrPublicSector n=1), the percentage view is unstable.
 </div>
 
 ---

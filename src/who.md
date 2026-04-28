@@ -40,7 +40,7 @@ display(Plot.plot({
 
 Three demographic absences are worth flagging explicitly:
 
-- **Only 3 foundation model labs:** Anthropic, OpenAI, Hugging Face. No Google DeepMind, Meta AI, Cohere, Mistral, or xAI submissions.
+- **Only 2 foundation model labs:** Anthropic and OpenAI. No Google DeepMind, Meta AI, Cohere, Mistral, or xAI. Hugging Face also submitted, but is classified as an enterprise-software/dev-platform vendor here rather than a frontier lab — see [Methodology](/methods).
 - **Only 1 government entity:** Australia's CSIRO. **No U.S. federal, state, or local agency submitted** — a surprising silence given the policy weight of the docket.
 - **No academic legal scholars:** the Academic/Research entries are Johns Hopkins APL and research think tanks (CNAS, CSET, CNA, Heritage), not law school centers.
 

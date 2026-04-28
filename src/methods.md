@@ -42,7 +42,7 @@ The analysis ran as a nine-phase script-driven pipeline. Each phase is idempoten
 | Label | Definition |
 |---|---|
 | `LargeTechCompany` | Major established tech firms (Microsoft, Google, Adobe, Cisco, Intel, etc.) |
-| `AIFoundationModelLab` | Frontier AI labs: Anthropic, OpenAI, Hugging Face |
+| `AIFoundationModelLab` | Frontier AI labs whose primary product is their flagship model: Anthropic, OpenAI. (Hugging Face is classified as Enterprise Software / Vendor — they're a model hub and dev platform, not a frontier lab.) |
 | `AIStartup` | Smaller or less-known AI or AI-security companies |
 | `EnterpriseSoftwareOrSecurityVendor` | Non-AI-first software and cybersecurity vendors |
 | `TradeAssociation` | Industry groups, chambers, alliances, councils |
