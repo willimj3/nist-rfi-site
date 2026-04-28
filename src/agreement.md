@@ -16,12 +16,12 @@ There are no sharply-divided substantive fields in this corpus. What looks like 
 | Coding quality | **substantive** | 91% | The corpus is serious. Off-topic / promotional / light comments are <10% combined. |
 | Does the comment flag innovation cost? | **no** | 76% | A minority concern overall — but the 24% who do are heavily concentrated in industry. |
 
-## What nobody addresses
+## What few address
 
 | Field | Dominant value | Share | Note |
 |---|---|---:|---|
-| Mandatory incident-reporting regime? | **unclear** | 85% | Silent, not consensual. See [the silences](/silences). |
-| Liability safe harbor? | **unclear** | 97% | Same. Only 18 reps engaged; 14 of them *opposed* safe harbor. |
+| Mandatory incident-reporting regime? | **unclear** | 85% | The RFI's Topic 3(a)(i) does ask about post-deployment incident detection, but few comments push for a *mandatory disclosure regime* on top of it. |
+| Liability safe harbor? | **unclear** | 97% | The RFI is a technical-security inquiry — it doesn't ask about legal liability. See note below. |
 
 ## What everyone hedges on
 
@@ -67,4 +67,19 @@ Small-N caveat: several stakeholder × codebook cells have counts under 5. Treat
 
 ---
 
-**Next:** [The silences →](/silences)
+## A note on liability safe harbor
+
+The codebook included a `supports_liability_safe_harbor` field — a holdover from an early draft of the analysis spec that anticipated a typical regulatory-policy docket where industry would predictably push for safe-harbor protection (the pattern in Section 230, autonomous-vehicles, DMCA debates).
+
+The RFI is not that kind of docket. CAISI/NIST framed it as a technical-security inquiry — agent threat models, security practices, deployment-environment controls. Legal liability is not one of the topics, so it is unsurprising that 97% of commenters do not address it.
+
+That said, **18 commenters did volunteer a position** — 14 against a safe harbor, 4 in favor. The 14 against come predominantly from independent commenters and small security vendors; industry trade associations were largely silent. Two readings of this:
+
+- *Strict reading.* Nothing here. Most commenters didn't address safe harbor because the RFI didn't invite them to.
+- *Looser reading.* In adjacent dockets industry typically volunteers safe-harbor arguments anyway. Its near-absence here, combined with grassroots opposition from individual commenters who *did* volunteer a position, is at least worth flagging for any future legislative analysis on AI agent liability.
+
+The data is in the [explore tab](/explore/) for anyone who wants to filter on the field.
+
+---
+
+**Next:** [Stakeholder patterns →](/stakeholders)

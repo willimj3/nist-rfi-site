@@ -11,7 +11,6 @@ export default {
     ]},
     {name: "Findings", pages: [
       {name: "Points of agreement", path: "/agreement"},
-      {name: "The silences", path: "/silences"},
       {name: "Stakeholder patterns", path: "/stakeholders"},
       {name: "Notable submissions", path: "/notable"},
     ]},

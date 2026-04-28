@@ -153,30 +153,6 @@ code {
   font-family: var(--monospace);
 }
 
-/* ─────────────────────────── Silences page ─────────────────────────── */
-.liability-summary {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  margin: 1.5rem 0 2rem;
-  align-items: flex-start;
-}
-.liability-stat {
-  flex: 1;
-  min-width: 260px;
-  font-size: 1.05rem;
-  line-height: 1.45;
-}
-.liability-stat .big {
-  display: block;
-  font-family: var(--sans-serif);
-  font-size: 3rem;
-  font-weight: 700;
-  color: var(--accent);
-  line-height: 1;
-  margin-bottom: 0.2em;
-}
-
 /* ─────────────────────────── Notable submissions ─────────────────────────── */
 .notable-list {
   display: flex;

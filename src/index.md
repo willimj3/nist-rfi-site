@@ -5,8 +5,8 @@ title: NIST AI Agent Security RFI — Public Comment Analysis
 # How industry, labs, and the public told NIST to regulate AI agents
 
 <div class="hero">
-<div class="hero-number">499</div>
-<div class="hero-caption">Of 517 organizations and individuals that responded to NIST's RFI on AI agent security, <strong>499 said nothing</strong> about whether good-faith developers should get a liability safe harbor. 18 addressed it. 14 of those 18 <em>opposed</em> the idea.</div>
+<div class="hero-number">22%</div>
+<div class="hero-caption">The RFI asked questions across <strong>five topic areas</strong>. Four of them drew substantive engagement from a majority of the 517 organizations that responded. The fifth — <em>Additional Considerations</em>, covering research priorities, international approaches, and cross-domain insights — drew it from 22%. None of the RFI's nine priority questions fall in that section.</div>
 </div>
 
 ```js
@@ -62,7 +62,7 @@ const topicChart = Plot.plot({
 display(topicChart);
 ```
 
-**Of the five topic areas the RFI asks about, "Additional Considerations" is the section almost nobody engages with.** 82% of commenters have substantive things to say about threats and vulnerabilities (Topic 1); 85% about security practices (Topic 2). But only 22% engage substantively with Topic 5 — research priorities, international approaches, and cross-domain insights. And 7.5% of enterprise security vendors engage substantively on Topic 5 at all. The RFI itself signals this weighting — none of its nine "priority questions" fall in Topic 5.
+**Of the five topic areas, only "Additional Considerations" fails to draw majority engagement.** 82% have substantive things to say about threats and vulnerabilities (Topic 1); 85% about security practices (Topic 2). But only 22% engage substantively with Topic 5 — and 7.5% of enterprise security vendors engage with it at all. Trade Associations are the only stakeholder group that pushes Topic 5 (52% substantive). The pattern matches the RFI's own framing: the priority questions NIST highlights for bandwidth-limited respondents are concentrated in Topics 1–4.
 
 ---
 
@@ -82,8 +82,8 @@ display(topicChart);
     <p>substantively engage with <a href="/topics">Topic 5 (Additional Considerations)</a></p>
   </div>
   <div class="card">
-    <h2>97%</h2>
-    <p>say nothing about <a href="/silences">liability safe harbor</a></p>
+    <h2>90%</h2>
+    <p>support <a href="/agreement">NIST as the standards body</a> for AI agent security</p>
   </div>
 </div>
 
@@ -91,12 +91,12 @@ display(topicChart);
 
 <div class="grid grid-cols-2 grid-cols-2-md">
   <div class="card">
-    <h3><a href="/silences">The silences</a></h3>
-    <p>Liability and incident reporting are the fields where the absence of commentary is the finding. Industry isn't lobbying for safe harbor. Almost nobody is pushing for a disclosure regime.</p>
+    <h3><a href="/topics">Topic-area engagement</a></h3>
+    <p>Where commenters engaged across the five topic areas the RFI asked about, broken out by stakeholder type. Topic 5 ("Additional Considerations") is the standout under-engagement.</p>
   </div>
   <div class="card">
-    <h3><a href="/topics">Topic-area engagement</a></h3>
-    <p>Of the five topic areas the RFI asks about, Topic 5 ("Additional Considerations") gets the least substantive response. Only Trade Associations engage with it at any meaningful rate.</p>
+    <h3><a href="/agreement">Points of agreement</a></h3>
+    <p>The corpus is more hedged than divided: 90% support NIST leading; 51% endorse mandatory pre-deployment evaluation conditionally; only 4% outright oppose a federal role.</p>
   </div>
   <div class="card">
     <h3><a href="/stakeholders">Stakeholder patterns</a></h3>

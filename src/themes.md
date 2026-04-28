@@ -56,7 +56,7 @@ display(Plot.plot({
 }));
 ```
 
-**Human oversight is the overwhelming consensus theme** — 88% of representatives list it in their top-3. The RFI's framing has effectively centered the field on human-in-the-loop and human-on-the-loop designs. Four themes are mentioned by 80%+ of commenters; `incident_reporting` and `liability` sit at the bottom, each under 13% — the same silence [documented here](/silences).
+**Human oversight is the overwhelming consensus theme** — 88% of representatives list it in their top-3. The RFI's framing has effectively centered the field on human-in-the-loop and human-on-the-loop designs. Four themes are mentioned by 80%+ of commenters; `incident_reporting` and `liability` sit at the bottom, each under 13% — consistent with the RFI's framing as a technical-security inquiry rather than a legal/regulatory policy docket. See [Points of agreement → A note on liability safe harbor](/agreement#a-note-on-liability-safe-harbor).
 
 ## Verbatim excerpts per theme
 
